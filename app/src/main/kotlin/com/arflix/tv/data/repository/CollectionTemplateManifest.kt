@@ -117,7 +117,9 @@ internal object CollectionTemplateManifest {
                 source(addonId = "aio-metadata", type = "movie", catalogId = "streaming.nfx"),
                 source(addonId = "aio-metadata", type = "series", catalogId = "streaming.nfx"),
                 watchProviderSource(type = "movie", providerId = 8),
-                watchProviderSource(type = "series", providerId = 8)
+                watchProviderSource(type = "series", providerId = 8),
+                watchProviderSourceAU(type = "movie", providerId = 8),
+                watchProviderSourceAU(type = "series", providerId = 8)
             ),
             listMetadata = listOf(
                 metadata(sourceCatalogId = "streaming.nfx", sourceAddonId = "aio-metadata", sourceName = "Netflix", sourceLabel = "AIO", mediaType = "movie", itemCount = null, author = null, url = null),
@@ -135,7 +137,9 @@ internal object CollectionTemplateManifest {
                 source(addonId = "aio-metadata", type = "movie", catalogId = "streaming.dnp"),
                 source(addonId = "aio-metadata", type = "series", catalogId = "streaming.dnp"),
                 watchProviderSource(type = "movie", providerId = 337),
-                watchProviderSource(type = "series", providerId = 337)
+                watchProviderSource(type = "series", providerId = 337),
+                watchProviderSourceAU(type = "movie", providerId = 337),
+                watchProviderSourceAU(type = "series", providerId = 337)
             ),
             listMetadata = listOf(
                 metadata(sourceCatalogId = "streaming.dnp", sourceAddonId = "aio-metadata", sourceName = "Disney+", sourceLabel = "AIO", mediaType = "movie", itemCount = null, author = null, url = null),
@@ -153,7 +157,9 @@ internal object CollectionTemplateManifest {
                 source(addonId = "aio-metadata", type = "movie", catalogId = "streaming.atp"),
                 source(addonId = "aio-metadata", type = "series", catalogId = "streaming.atp"),
                 watchProviderSource(type = "movie", providerId = 350),
-                watchProviderSource(type = "series", providerId = 350)
+                watchProviderSource(type = "series", providerId = 350),
+                watchProviderSourceAU(type = "movie", providerId = 350),
+                watchProviderSourceAU(type = "series", providerId = 350)
             ),
             listMetadata = listOf(
                 metadata(sourceCatalogId = "streaming.atp", sourceAddonId = "aio-metadata", sourceName = "Apple TV+", sourceLabel = "AIO", mediaType = "movie", itemCount = null, author = null, url = null),
@@ -171,7 +177,9 @@ internal object CollectionTemplateManifest {
                 source(addonId = "aio-metadata", type = "movie", catalogId = "streaming.amp"),
                 source(addonId = "aio-metadata", type = "series", catalogId = "streaming.amp"),
                 watchProviderSource(type = "movie", providerId = 9),
-                watchProviderSource(type = "series", providerId = 9)
+                watchProviderSource(type = "series", providerId = 9),
+                watchProviderSourceAU(type = "movie", providerId = 9),
+                watchProviderSourceAU(type = "series", providerId = 9)
             ),
             listMetadata = listOf(
                 metadata(sourceCatalogId = "streaming.amp", sourceAddonId = "aio-metadata", sourceName = "Prime Video", sourceLabel = "AIO", mediaType = "movie", itemCount = null, author = null, url = null),
@@ -189,7 +197,9 @@ internal object CollectionTemplateManifest {
                 source(addonId = "aio-metadata", type = "movie", catalogId = "streaming.hbm"),
                 source(addonId = "aio-metadata", type = "series", catalogId = "streaming.hbm"),
                 watchProviderSource(type = "movie", providerId = 1899),
-                watchProviderSource(type = "series", providerId = 1899)
+                watchProviderSource(type = "series", providerId = 1899),
+                watchProviderSourceAU(type = "movie", providerId = 1899),
+                watchProviderSourceAU(type = "series", providerId = 1899)
             ),
             listMetadata = listOf(
                 metadata(sourceCatalogId = "streaming.hbm", sourceAddonId = "aio-metadata", sourceName = "HBO Max", sourceLabel = "AIO", mediaType = "movie", itemCount = null, author = null, url = null),
@@ -227,7 +237,9 @@ internal object CollectionTemplateManifest {
                 watchProviderSource(type = "movie", providerId = 2303),
                 watchProviderSource(type = "series", providerId = 2303),
                 watchProviderSource(type = "movie", providerId = 2616),
-                watchProviderSource(type = "series", providerId = 2616)
+                watchProviderSource(type = "series", providerId = 2616),
+                watchProviderSourceAU(type = "movie", providerId = 2303),
+                watchProviderSourceAU(type = "series", providerId = 2303)
             ),
             listMetadata = listOf(
                 metadata(sourceCatalogId = "mdblist.86762", sourceAddonId = "aio-metadata", sourceName = "Paramount+ Movies", sourceLabel = "MDBLIST", mediaType = "movie", itemCount = null, author = null, url = null),
@@ -319,7 +331,9 @@ internal object CollectionTemplateManifest {
                 source(addonId = "aio-metadata", type = "movie", catalogId = "streaming.dpe"),
                 source(addonId = "aio-metadata", type = "series", catalogId = "streaming.dpe"),
                 watchProviderSource(type = "movie", providerId = 520),
-                watchProviderSource(type = "series", providerId = 520)
+                watchProviderSource(type = "series", providerId = 520),
+                watchProviderSourceAU(type = "movie", providerId = 520),
+                watchProviderSourceAU(type = "series", providerId = 520)
             ),
             listMetadata = listOf(
                 metadata(sourceCatalogId = "streaming.dpe", sourceAddonId = "aio-metadata", sourceName = "Discovery+", sourceLabel = "AIO", mediaType = "movie", itemCount = null, author = null, url = null),
@@ -337,12 +351,53 @@ internal object CollectionTemplateManifest {
                 source(addonId = "aio-metadata", type = "movie", catalogId = "streaming.cru_movie"),
                 source(addonId = "aio-metadata", type = "series", catalogId = "streaming.cru_series"),
                 watchProviderSource(type = "movie", providerId = 283),
-                watchProviderSource(type = "series", providerId = 283)
+                watchProviderSource(type = "series", providerId = 283),
+                watchProviderSourceAU(type = "movie", providerId = 283),
+                watchProviderSourceAU(type = "series", providerId = 283)
             ),
             listMetadata = listOf(
                 metadata(sourceCatalogId = "streaming.cru_movie", sourceAddonId = "aio-metadata", sourceName = "Crunchyroll Movies", sourceLabel = "AIO", mediaType = "movie", itemCount = null, author = null, url = null),
                 metadata(sourceCatalogId = "streaming.cru_series", sourceAddonId = "aio-metadata", sourceName = "Crunchyroll Series", sourceLabel = "AIO", mediaType = "series", itemCount = null, author = null, url = null)
             )
+        ),
+        entry(
+            title = "7plus",
+            group = CollectionGroupKind.SERVICE,
+            coverImageUrl = "${UPLOADED_COVER_BASE}7plus.jpg",
+            tileShape = CollectionTileShape.LANDSCAPE,
+            hideTitle = true,
+            heroVideoUrl = null,
+            sources = listOf(
+                watchProviderSourceAU(type = "movie", providerId = 457),
+                watchProviderSourceAU(type = "series", providerId = 457)
+            ),
+            listMetadata = emptyList()
+        ),
+        entry(
+            title = "9Now",
+            group = CollectionGroupKind.SERVICE,
+            coverImageUrl = "${UPLOADED_COVER_BASE}9now.jpg",
+            tileShape = CollectionTileShape.LANDSCAPE,
+            hideTitle = true,
+            heroVideoUrl = null,
+            sources = listOf(
+                watchProviderSourceAU(type = "movie", providerId = 175),
+                watchProviderSourceAU(type = "series", providerId = 175)
+            ),
+            listMetadata = emptyList()
+        ),
+        entry(
+            title = "10 Play",
+            group = CollectionGroupKind.SERVICE,
+            coverImageUrl = "${UPLOADED_COVER_BASE}10play.jpg",
+            tileShape = CollectionTileShape.LANDSCAPE,
+            hideTitle = true,
+            heroVideoUrl = null,
+            sources = listOf(
+                watchProviderSourceAU(type = "movie", providerId = 184),
+                watchProviderSourceAU(type = "series", providerId = 184)
+            ),
+            listMetadata = emptyList()
         ),
         entry(
             title = "Adult Swim",
@@ -1083,6 +1138,14 @@ internal object CollectionTemplateManifest {
         mediaType = type,
         tmdbWatchProviderId = providerId,
         watchRegion = "US",
+        sortBy = "popularity.desc"
+    )
+
+    private fun watchProviderSourceAU(type: String, providerId: Int) = CollectionSourceConfig(
+        kind = CollectionSourceKind.TMDB_WATCH_PROVIDER,
+        mediaType = type,
+        tmdbWatchProviderId = providerId,
+        watchRegion = "AU",
         sortBy = "popularity.desc"
     )
 
